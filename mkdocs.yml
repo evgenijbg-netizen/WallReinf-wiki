@@ -41,3 +41,20 @@ markdown_extensions:
 
 nav:
   - Domů: index.md
+  - Průvodce:
+    - pruvodce/index.md
+    - Požadavky: pruvodce/pozadavky.md
+    - Instalace: pruvodce/instalace.md
+    - Připojení k modelu: pruvodce/pripojeni.md
+    - Základní workflow: pruvodce/zakladni-workflow.md
+    - Hlavní parametry: pruvodce/parametry.md
+    - Otvory: pruvodce/otvory.md
+    - Třmínky: pruvodce/trminky.md
+    - Diagonální pruty: pruvodce/diagonaly.md
+    - Preview panel: pruvodce/preview.md
+    - Validační okno: pruvodce/validace.md
+    - PDF export: pruvodce/pdf-export.md
+  - Reference:
+    - reference/index.md
+    - Parametry: reference/parametry.md
+  - FAQ: faq.md
