@@ -37,9 +37,9 @@
 - [ ] **GUIDE-02**: Stránka pro otvory (detekce, nastavení, U-pruty kolem otvorů)
 - [ ] **GUIDE-03**: Stránka pro třmínky a interakce segmentů
 - [ ] **GUIDE-04**: Stránka pro diagonální pruty
-- [ ] **GUIDE-05**: Stránka pro preview panel (vizualizace plánované výztuže)
-- [ ] **GUIDE-06**: Stránka pro validační okno
-- [ ] **GUIDE-07**: Stránka pro PDF export
+- [x] **GUIDE-05**: Stránka pro preview panel (vizualizace plánované výztuže)
+- [x] **GUIDE-06**: Stránka pro validační okno
+- [x] **GUIDE-07**: Stránka pro PDF export
 
 ### Obsah — Reference
 
@@ -121,9 +121,9 @@
 | GUIDE-02 | Phase 3 | Pending |
 | GUIDE-03 | Phase 3 | Pending |
 | GUIDE-04 | Phase 3 | Pending |
-| GUIDE-05 | Phase 3 | Pending |
-| GUIDE-06 | Phase 3 | Pending |
-| GUIDE-07 | Phase 3 | Pending |
+| GUIDE-05 | Phase 3 | Complete |
+| GUIDE-06 | Phase 3 | Complete |
+| GUIDE-07 | Phase 3 | Complete |
 | REF-01 | Phase 4 | Pending |
 | REF-02 | Phase 4 | Pending |
 | REF-03 | Phase 4 | Pending |
