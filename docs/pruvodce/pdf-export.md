@@ -45,3 +45,7 @@ Export obsahuje grafický pohled na stěnu s viditelnou výztuží tak, jak ji z
 | **Tisk** | Rychlé vytisknutí pro kontrolu na staveništi |
 
 Podrobnosti o vrstvách a legendě viz [Validační okno](validace.md#vrstvy-a-legenda).
+
+## Viz také
+
+- [FAQ — Validace](../faq.md#validace)

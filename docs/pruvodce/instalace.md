@@ -38,3 +38,7 @@ Plugin se spouští přímo z Tekla Structures přes panel Applications & Compon
 ![Applications & Components panel s pluginem](../assets/screenshots/instalace-spusteni.png)
 
 *[VERZE] — Tekla Structures Applications & Components panel. Zachytit: vyhledávací pole s textem "Wall Reinforcement", plugin viditelný v seznamu výsledků.*
+
+## Viz také
+
+- [FAQ — Připojení k Tekla Structures](../faq.md#pripojeni-k-tekla-structures)

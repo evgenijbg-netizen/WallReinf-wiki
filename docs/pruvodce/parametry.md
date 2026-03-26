@@ -149,3 +149,13 @@ V okně **Nastavení** → **Normy** jsou dostupné:
 ![Okno Nastavení — sekce Výchozí hodnoty](../assets/screenshots/settings-vychozi-hodnoty.png)
 
 *[VERZE] — Okno Nastavení, sekce Výchozí hodnoty. Zachytit: 6-polní mřížka průměrů a roztečí s typickými hodnotami, Krytí 30 mm, Odsazení od okraje 25 mm.*
+
+## Viz také
+
+- [Tabulka parametrů — Výztuž](../reference/parametry.md#vyztuz)
+- [Tabulka parametrů — Krytí a okraje](../reference/parametry.md#kryti-a-okraje)
+- [Tabulka parametrů — Detaily](../reference/parametry.md#detaily)
+- [Tabulka parametrů — Nastavení — Výchozí hodnoty](../reference/parametry.md#nastaveni-vychozi-hodnoty)
+- [Tabulka parametrů — Nastavení — Segmentace rastru a Dělení prutu](../reference/parametry.md#nastaveni-segmentace-rastru-a-deleni-prutu)
+- [Tabulka parametrů — Nastavení — Třmínky a prapory](../reference/parametry.md#nastaveni-trminky-a-prapory)
+- [FAQ — Generování výztuže](../faq.md#generovani-vyztuze)

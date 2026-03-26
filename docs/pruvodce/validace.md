@@ -63,3 +63,7 @@ Při vizuální kontrole výztuže zaměřte pozornost na:
 Zapínáním a vypínáním vrstev v panelu **Vrstvy výztuže** lze izolovat a zkontrolovat každý typ výztuže samostatně.
 
 Pro export validačního pohledu do PDF nebo PNG viz [PDF export](pdf-export.md).
+
+## Viz také
+
+- [FAQ — Validace](../faq.md#validace)

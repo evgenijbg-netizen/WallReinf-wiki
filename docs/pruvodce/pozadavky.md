@@ -32,3 +32,7 @@ Plugin vyžaduje **.NET Framework 4.8**.
 
 !!! warning "Pozor"
     Plugin vyžaduje přesně .NET Framework 4.8. Starší verze způsobí chybu při spuštění. Verze lze ověřit v Ovládacích panelech → Programy → Zapnout nebo vypnout funkce systému Windows.
+
+## Viz také
+
+- [FAQ — Připojení k Tekla Structures](../faq.md#pripojeni-k-tekla-structures)

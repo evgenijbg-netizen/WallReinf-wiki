@@ -80,3 +80,9 @@ Sekce **Fiktivní zvětšení otvorů** umožňuje fiktivně zvětšit prostupy 
 ![Okno Nastavení — sekce Prostupy a Generace otvorů](../assets/screenshots/settings-prostupy.png)
 
 *[VERZE] — Okno Nastavení, sekce Prostupy a Generace otvorů. Zachytit: všechny tři filtry viditelné, Limit protažení noh U-ček nastaven na 150 mm, Odsazení ohybu kotevních prutů na 50 mm.*
+
+## Viz také
+
+- [Tabulka parametrů — Výztuž](../reference/parametry.md#vyztuz) (Prostupy řádky)
+- [Tabulka parametrů — Nastavení — Prostupy](../reference/parametry.md#nastaveni-prostupy)
+- [FAQ — Generování výztuže](../faq.md#generovani-vyztuze)

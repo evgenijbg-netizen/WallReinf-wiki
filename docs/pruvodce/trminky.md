@@ -59,3 +59,8 @@ Nastavení segmentace (prahy přerušení, max délka segmentu, min vzdálenost 
 *[VERZE] — Stěna s viditelnou segmentací. Zachytit: krátký segment s třmínky, středně dlouhý segment s prapory, dlouhý segment s přímou výztuží bez příčné výztuže.*
 
 Třída prvků třmínků a praporů v exportním výstupu: třmínky jsou označeny Class 8, prapory Class 9 (Flag) — toto označení je viditelné v legendě validačního okna. Viz [Validace výztuže](../pruvodce/validace.md).
+
+## Viz také
+
+- [Tabulka parametrů — Nastavení — Třmínky a prapory](../reference/parametry.md#nastaveni-trminky-a-prapory)
+- [FAQ — Generování výztuže](../faq.md#generovani-vyztuze)

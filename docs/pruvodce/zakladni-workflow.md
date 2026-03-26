@@ -66,3 +66,10 @@ Plugin umožňuje přidat k libovolné stěně textové poznámky. Klikněte na 
 ![Okno Poznámka ke stěně](../assets/screenshots/poznamka-ke-stene.png)
 
 *[VERZE] — Okno Poznámka ke stěně s textovým polem. Zachytit: prázdné nebo vzorově vyplněné pole poznámky.*
+
+## Viz také
+
+- [Tabulka parametrů — Výztuž](../reference/parametry.md#vyztuz)
+- [Tabulka parametrů — Krytí a okraje](../reference/parametry.md#kryti-a-okraje)
+- [Tabulka parametrů — Detaily](../reference/parametry.md#detaily)
+- [FAQ — Generování výztuže](../faq.md#generovani-vyztuze)

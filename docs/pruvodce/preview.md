@@ -96,3 +96,7 @@ Postup úpravy délek:
     Zkrácené nebo prodloužené pruty mohou kolidovat s okraji stěny nebo otvory. Vždy spusťte **Zkontrolovat kolize** po každé úpravě délek, než přistoupíte ke generování.
 
 Nastavení průměrů a roztečí viz [Hlavní parametry](parametry.md).
+
+## Viz také
+
+- [FAQ — Validace](../faq.md#validace)

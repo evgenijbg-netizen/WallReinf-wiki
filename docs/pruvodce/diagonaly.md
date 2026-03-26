@@ -40,3 +40,8 @@ Pokud chcete použít jiný průměr pro diagonály a U-pruty, není to v aktuá
     Diagonální pruty se generují na fyzickém rozměru prostupu, stejně jako U-pruty. **Fiktivní zvětšení otvorů** (nastavení v okně **Nastavení**) ovlivňuje pouze rastr přímé výztuže a na polohu ani délku diagonálních prutů nemá vliv. Viz [Otvory](otvory.md) pro podrobnosti o fiktivním zvětšení.
 
 Aktivaci diagonálních prutů a nastavení průměru prostupů lze také nastavit jako výchozí hodnotu v okně **Nastavení** → **Výchozí hodnoty**. Viz [Hlavní parametry](parametry.md#nastaveni-a-vychozi-hodnoty).
+
+## Viz také
+
+- [Tabulka parametrů — Výztuž](../reference/parametry.md#vyztuz) (Šikmá výztuž v rozích)
+- [FAQ — Generování výztuže](../faq.md#generovani-vyztuze)
