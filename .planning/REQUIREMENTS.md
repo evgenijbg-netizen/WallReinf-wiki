@@ -43,9 +43,9 @@
 
 ### Obsah — Reference
 
-- [ ] **REF-01**: Tabulka parametrů s názvy odpovídajícími UI pluginu
-- [ ] **REF-02**: Každý parametr má popis, výchozí hodnotu a platný rozsah
-- [ ] **REF-03**: Parametry jsou seskupeny podle sekcí UI (stejně jako v pluginu)
+- [x] **REF-01**: Tabulka parametrů s názvy odpovídajícími UI pluginu
+- [x] **REF-02**: Každý parametr má popis, výchozí hodnotu a platný rozsah
+- [x] **REF-03**: Parametry jsou seskupeny podle sekcí UI (stejně jako v pluginu)
 
 ### Obsah — FAQ
 
@@ -124,9 +124,9 @@
 | GUIDE-05 | Phase 3 | Complete |
 | GUIDE-06 | Phase 3 | Complete |
 | GUIDE-07 | Phase 3 | Complete |
-| REF-01 | Phase 4 | Pending |
-| REF-02 | Phase 4 | Pending |
-| REF-03 | Phase 4 | Pending |
+| REF-01 | Phase 4 | Complete |
+| REF-02 | Phase 4 | Complete |
+| REF-03 | Phase 4 | Complete |
 | FAQ-01 | Phase 4 | Pending |
 | FAQ-02 | Phase 4 | Pending |
 | FAQ-03 | Phase 4 | Pending |
