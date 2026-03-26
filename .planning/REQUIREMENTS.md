@@ -34,9 +34,9 @@
 ### Obsah — Průvodce funkcemi
 
 - [x] **GUIDE-01**: Stránka pro hlavní parametry (průměry prutů, krytí, rozteče, okrajové pruty)
-- [ ] **GUIDE-02**: Stránka pro otvory (detekce, nastavení, U-pruty kolem otvorů)
-- [ ] **GUIDE-03**: Stránka pro třmínky a interakce segmentů
-- [ ] **GUIDE-04**: Stránka pro diagonální pruty
+- [x] **GUIDE-02**: Stránka pro otvory (detekce, nastavení, U-pruty kolem otvorů)
+- [x] **GUIDE-03**: Stránka pro třmínky a interakce segmentů
+- [x] **GUIDE-04**: Stránka pro diagonální pruty
 - [x] **GUIDE-05**: Stránka pro preview panel (vizualizace plánované výztuže)
 - [x] **GUIDE-06**: Stránka pro validační okno
 - [x] **GUIDE-07**: Stránka pro PDF export
@@ -118,9 +118,9 @@
 | START-03 | Phase 3 | Complete |
 | START-04 | Phase 3 | Complete |
 | GUIDE-01 | Phase 3 | Complete |
-| GUIDE-02 | Phase 3 | Pending |
-| GUIDE-03 | Phase 3 | Pending |
-| GUIDE-04 | Phase 3 | Pending |
+| GUIDE-02 | Phase 3 | Complete |
+| GUIDE-03 | Phase 3 | Complete |
+| GUIDE-04 | Phase 3 | Complete |
 | GUIDE-05 | Phase 3 | Complete |
 | GUIDE-06 | Phase 3 | Complete |
 | GUIDE-07 | Phase 3 | Complete |

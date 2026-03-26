@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-04-PLAN.md
-last_updated: "2026-03-26T11:47:13.782Z"
-last_activity: 2026-03-26 -- Completed 03-02 zakladni-workflow.md and parametry.md
+stopped_at: Completed 03-03-PLAN.md
+last_updated: "2026-03-26T11:48:51.041Z"
+last_activity: 2026-03-26 -- Completed 03-04 preview.md, validace.md, pdf-export.md
 progress:
   total_phases: 6
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 7
-  completed_plans: 6
-  percent: 29
+  completed_plans: 7
+  percent: 86
 ---
 
 # Project State
@@ -52,6 +52,7 @@ Progress: [█████████░] 86%
 *Updated after each plan completion*
 | Phase 01-infrastructure-and-deploy-pipeline P01 | 2 | 2 tasks | 6 files |
 | Phase 03-user-guide-content P04 | 20 | 2 tasks | 13 files |
+| Phase 03-user-guide-content P03 | 5 | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,9 @@ Recent decisions affecting current work:
 - [Phase 03-user-guide-content 03-02]: T-spoj requires Lemování (U-čka) — dependency documented with !!! warning admonition (XAML binding: IsEnabled binds to chkGenerateEdge)
 - [Phase 03-user-guide-content 03-04]: Preview page covers BOTH inline dock (MainWindow right column) and standalone RebarPreviewWindow on one page per CONTEXT.md locked decision
 - [Phase 03-user-guide-content 03-04]: validace.md uses !!! note admonition to explicitly distinguish validation (actual Tekla model rebar) from preview (planned rebar) to prevent user confusion
+- [Phase 03-user-guide-content]: otvory.md documents all 3 Settings sections (Prostupy filtry, Generace otvorů, Fiktivní zvětšení otvorů) per CONTEXT.md assignment
+- [Phase 03-user-guide-content]: trminky.md threshold defaults sourced from RebarParameters.cs: StirrupThreshold=300, FlagThreshold=1500
+- [Phase 03-user-guide-content]: diagonaly.md: diagonal rebar diameter shares Průměr: field with U-bars — no separate control exists in current plugin version
 
 ### Pending Todos
 
@@ -86,6 +90,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T11:47:13.778Z
-Stopped at: Completed 03-04-PLAN.md
+Last session: 2026-03-26T11:48:51.037Z
+Stopped at: Completed 03-03-PLAN.md
 Resume file: None

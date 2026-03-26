@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [ ] **Phase 1: Infrastructure and Deploy Pipeline** - MkDocs Material site with working CI/CD deploy to GitHub Pages
 - [ ] **Phase 2: Navigation Skeleton** - Complete page structure with stub files and explicit nav configuration
-- [ ] **Phase 3: User Guide Content** - All workflow-based guide pages written with prose, admonitions, and screenshot placeholders
+- [x] **Phase 3: User Guide Content** - All workflow-based guide pages written with prose, admonitions, and screenshot placeholders (completed 2026-03-26)
 - [ ] **Phase 4: Parameter Reference and FAQ** - Parameter tables, FAQ with 10+ known problems, and cross-links between guide and reference
 - [ ] **Phase 5: Screenshots** - All screenshots captured, placed, and captioned with plugin version
 - [ ] **Phase 6: Polish and Launch** - Final audit, theme tuning, strict build check, launch-ready site
@@ -98,7 +98,7 @@ Plans:
 - [ ] Compare 5 parameter names on wiki pages against the plugin UI -- they match exactly
 - [ ] Confirm `[SCREENSHOT]` placeholders exist where visuals are needed
 
-**Plans:** 3/4 plans executed
+**Plans:** 4/4 plans complete
 
 Plans:
 - [x] 03-01-PLAN.md &mdash; Create screenshots directory and write Getting Started pages (pozadavky, instalace, pripojeni)
@@ -184,7 +184,7 @@ Plans:
 | Phase | Requirements | Count |
 |-------|-------------|-------|
 | 1. Infrastructure and Deploy Pipeline | 1/2 | In Progress|  | 2. Navigation Skeleton | NAV-01 .. NAV-06 | 6 |
-| 3. User Guide Content | 3/4 | In Progress|  | 4. Parameter Reference and FAQ | REF-01 .. REF-03, FAQ-01 .. FAQ-04, UX-04 | 8 |
+| 3. User Guide Content | 4/4 | Complete   | 2026-03-26 | 4. Parameter Reference and FAQ | REF-01 .. REF-03, FAQ-01 .. FAQ-04, UX-04 | 8 |
 | 5. Screenshots | IMG-01 .. IMG-06 | 6 |
 | 6. Polish and Launch | (integration/quality -- no new requirements) | 0 |
 | **Total** | | **41** |
