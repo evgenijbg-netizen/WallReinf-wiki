@@ -17,12 +17,12 @@
 
 ### Navigace
 
-- [ ] **NAV-01**: Site má explicitní nav: konfiguraci v mkdocs.yml (ne auto-discovery)
-- [ ] **NAV-02**: Navigace je rozdělena na dvě sekce: Průvodce (task-based) a Reference
-- [ ] **NAV-03**: Sidebar navigace zobrazuje všechny sekce a podsekce
-- [ ] **NAV-04**: Každá stránka má on-page TOC (table of contents)
-- [ ] **NAV-05**: Breadcrumbs jsou viditelné na každé stránce
-- [ ] **NAV-06**: Soubory používají ASCII slugy (žádné české znaky v názvech souborů)
+- [x] **NAV-01**: Site má explicitní nav: konfiguraci v mkdocs.yml (ne auto-discovery)
+- [x] **NAV-02**: Navigace je rozdělena na dvě sekce: Průvodce (task-based) a Reference
+- [x] **NAV-03**: Sidebar navigace zobrazuje všechny sekce a podsekce
+- [x] **NAV-04**: Každá stránka má on-page TOC (table of contents)
+- [x] **NAV-05**: Breadcrumbs jsou viditelné na každé stránce
+- [x] **NAV-06**: Soubory používají ASCII slugy (žádné české znaky v názvech souborů)
 
 ### Obsah — Začínáme
 
@@ -107,12 +107,12 @@
 | INFRA-05 | Phase 1 | Complete |
 | INFRA-06 | Phase 1 | Complete |
 | INFRA-07 | Phase 1 | Complete |
-| NAV-01 | Phase 2 | Pending |
-| NAV-02 | Phase 2 | Pending |
-| NAV-03 | Phase 2 | Pending |
-| NAV-04 | Phase 2 | Pending |
-| NAV-05 | Phase 2 | Pending |
-| NAV-06 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Complete |
+| NAV-02 | Phase 2 | Complete |
+| NAV-03 | Phase 2 | Complete |
+| NAV-04 | Phase 2 | Complete |
+| NAV-05 | Phase 2 | Complete |
+| NAV-06 | Phase 2 | Complete |
 | START-01 | Phase 3 | Pending |
 | START-02 | Phase 3 | Pending |
 | START-03 | Phase 3 | Pending |

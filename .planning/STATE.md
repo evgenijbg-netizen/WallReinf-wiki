@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-stopped_at: Phase 2 context gathered
-last_updated: "2026-03-26T09:22:13.872Z"
-last_activity: 2026-03-26 -- Roadmap created
+status: in-progress
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-26T09:36:30Z"
+last_activity: 2026-03-26 -- Completed 02-01 navigation skeleton
 progress:
   total_phases: 6
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
-  percent: 0
+  total_plans: 3
+  completed_plans: 3
+  percent: 17
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-25)
 
 **Core value:** Uživatel najde srozumitelný návod, jak plugin používat -- od spuštění přes nastavení parametrů až po generování a validaci výztuže.
-**Current focus:** Phase 1: Infrastructure and Deploy Pipeline
+**Current focus:** Phase 2: Navigation Skeleton (completed 02-01)
 
 ## Current Position
 
-Phase: 1 of 6 (Infrastructure and Deploy Pipeline)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-03-26 -- Roadmap created
+Phase: 2 of 6 (Navigation Skeleton)
+Plan: 1 of 1 in current phase (completed)
+Status: In progress
+Last activity: 2026-03-26 -- Completed 02-01 navigation skeleton
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 17%
 
 ## Performance Metrics
 
@@ -64,6 +64,9 @@ Recent decisions affecting current work:
 - [Phase 01-infrastructure-and-deploy-pipeline]: site_url set from first commit with trailing slash to prevent broken CSS/nav on GitHub Pages
 - [Phase 01-infrastructure-and-deploy-pipeline]: permissions: contents: write at workflow level prevents silent deploy failure where CI is green but gh-pages branch is never written
 - [Phase 01-infrastructure-and-deploy-pipeline]: docs/index.md uses bold text (not hyperlinks) for section references to avoid broken internal links in mkdocs build --strict
+- [Phase 02-navigation-skeleton]: Section index pages listed in nav without label so MkDocs Material infers tab label from H1 heading
+- [Phase 02-navigation-skeleton]: No internal cross-links in stubs to prevent --strict failures before content phases exist
+- [Phase 02-navigation-skeleton]: ASCII-only filenames (e.g., trminky.md) with Czech prose inside files
 
 ### Pending Todos
 
@@ -75,6 +78,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T09:22:13.866Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-navigation-skeleton/02-CONTEXT.md
+Last session: 2026-03-26T09:36:30Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: .planning/phases/02-navigation-skeleton/02-01-SUMMARY.md
