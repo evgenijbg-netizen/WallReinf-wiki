@@ -128,7 +128,11 @@ Plans:
 - [ ] Verify FAQ covers all three required areas: Tekla connection (FAQ-02), generation (FAQ-03), validation (FAQ-04)
 - [ ] Click 3 cross-links from guide to reference and 3 from reference to guide -- all resolve correctly
 
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 04-01-PLAN.md &mdash; Write complete parameter reference table (10 UI sections) and update reference index
+- [ ] 04-02-PLAN.md &mdash; Write FAQ page (13+ items) and add bidirectional cross-links to all guide pages
 
 ### Phase 5: Screenshots
 
@@ -200,7 +204,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 |-------|----------------|--------|-----------|
 | 1. Infrastructure and Deploy Pipeline | 0/2 | Planned | - |
 | 2. Navigation Skeleton | 1/1 | Complete | 2026-03-26 |
-| 3. User Guide Content | 1/4 | In progress | - |
-| 4. Parameter Reference and FAQ | 0/TBD | Not started | - |
+| 3. User Guide Content | 4/4 | Complete | 2026-03-26 |
+| 4. Parameter Reference and FAQ | 0/2 | Planned | - |
 | 5. Screenshots | 0/TBD | Not started | - |
 | 6. Polish and Launch | 0/TBD | Not started | - |
