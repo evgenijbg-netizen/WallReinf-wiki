@@ -184,7 +184,7 @@ Plans:
 | Phase | Requirements | Count |
 |-------|-------------|-------|
 | 1. Infrastructure and Deploy Pipeline | 1/2 | In Progress|  | 2. Navigation Skeleton | NAV-01 .. NAV-06 | 6 |
-| 3. User Guide Content | 4/4 | Complete   | 2026-03-26 | 4. Parameter Reference and FAQ | REF-01 .. REF-03, FAQ-01 .. FAQ-04, UX-04 | 8 |
+| 3. User Guide Content | 4/4 | Complete    | 2026-03-26 | 4. Parameter Reference and FAQ | REF-01 .. REF-03, FAQ-01 .. FAQ-04, UX-04 | 8 |
 | 5. Screenshots | IMG-01 .. IMG-06 | 6 |
 | 6. Polish and Launch | (integration/quality -- no new requirements) | 0 |
 | **Total** | | **41** |
