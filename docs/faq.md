@@ -23,7 +23,7 @@ Viz [Připojení k modelu](pruvodce/pripojeni.md).
 
 Klikněte přímo na tlačítko **Test připojení**; výsledek se zobrazí pod tlačítkem. Pokud status zůstává Neověřeno, model není aktivní.
 
-Viz [Připojení k modelu](pruvodce/pripojeni.md#test-pripojeni).
+Viz [Připojení k modelu](pruvodce/pripojeni.md#overeni-pripojeni).
 
 ### Dropdown Stěna je po kliknutí Načíst prázdný
 
@@ -61,7 +61,7 @@ Viz [Třmínky a prapory](pruvodce/trminky.md) a [Parametry — Nastavení — T
 
 **Prah praporu** musí být vždy vyšší než **Prah třmínku**. Plugin tuto podmínku nekontroluje automaticky.
 
-Viz [Třmínky a prapory](pruvodce/trminky.md#prahy).
+Viz [Třmínky a prapory](pruvodce/trminky.md#prahy-v-nastaveni).
 
 ### Orientace S1 — průměry přiřazeny k opačné vrstvě
 
@@ -87,7 +87,7 @@ Viz [Validační okno](pruvodce/validace.md).
 
 Klikněte na **Obnovit** v záhlaví validačního okna. Data se znovu načtou z Tekla modelu.
 
-Viz [Validační okno](pruvodce/validace.md#obnovit).
+Viz [Validační okno](pruvodce/validace.md#skutecna-vyztuz-z-tekla-modelu).
 
 ### PDF export selhal s chybou
 
@@ -99,4 +99,4 @@ Viz [PDF export](pruvodce/pdf-export.md) a [Validační okno](pruvodce/validace.
 
 Po každé úpravě délek klikněte na **Zkontrolovat kolize** (nebo **Kolize** v inline doku). Generujte až po ověření, že kolize nejsou hlášeny.
 
-Viz [Preview panel](pruvodce/preview.md#kontrola-kolizi).
+Viz [Preview panel](pruvodce/preview.md#upravy-delek).
