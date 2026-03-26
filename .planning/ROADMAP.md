@@ -43,7 +43,11 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] Check the GitHub Actions tab -- the latest workflow run is green with `contents: write` permission
 - [ ] Verify `site/` is not committed to the repository
 
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md &mdash; Create all MkDocs config files, dependencies, CI workflow, index page, and logo
+- [ ] 01-02-PLAN.md &mdash; Initialize git, push to GitHub, verify live deployment
 
 ### Phase 2: Navigation Skeleton
 
@@ -187,7 +191,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Infrastructure and Deploy Pipeline | 0/TBD | Not started | - |
+| 1. Infrastructure and Deploy Pipeline | 0/2 | Planned | - |
 | 2. Navigation Skeleton | 0/TBD | Not started | - |
 | 3. User Guide Content | 0/TBD | Not started | - |
 | 4. Parameter Reference and FAQ | 0/TBD | Not started | - |
