@@ -4,4 +4,6 @@ Referenční část obsahuje kompletní přehled všech parametrů pluginu Wall 
 
 ## Obsah reference
 
-V sekci **Parametry** najdete kompletní tabulku všech parametrů seskupenou podle sekcí pluginu.
+- [Parametry](parametry.md) — Kompletní tabulka všech parametrů seskupená podle 8 sekcí pluginu (Výztuž, Krytí a okraje, Detaily, Nastavení)
+
+Pro průvodce funkcemi pluginu viz [Průvodce](../pruvodce/index.md).
