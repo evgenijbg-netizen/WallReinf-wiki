@@ -26,9 +26,9 @@
 
 ### Obsah — Začínáme
 
-- [ ] **START-01**: Stránka popisuje požadavky (Tekla Structures verze, .NET, OS)
-- [ ] **START-02**: Stránka popisuje instalaci/spuštění pluginu
-- [ ] **START-03**: Stránka popisuje připojení k modelu v Tekle
+- [x] **START-01**: Stránka popisuje požadavky (Tekla Structures verze, .NET, OS)
+- [x] **START-02**: Stránka popisuje instalaci/spuštění pluginu
+- [x] **START-03**: Stránka popisuje připojení k modelu v Tekle
 - [ ] **START-04**: Stránka popisuje základní workflow (výběr stěny → nastavení → generování)
 
 ### Obsah — Průvodce funkcemi
@@ -65,8 +65,8 @@
 
 ### Styl a UX
 
-- [ ] **UX-01**: Admonitions (warning, tip, note) jsou použity u důležitých upozornění
-- [ ] **UX-02**: Na každé stránce je badge/admonition s verzí pluginu
+- [x] **UX-01**: Admonitions (warning, tip, note) jsou použity u důležitých upozornění
+- [x] **UX-02**: Na každé stránce je badge/admonition s verzí pluginu
 - [ ] **UX-03**: Terminologie v wiki odpovídá labelům v UI pluginu
 - [ ] **UX-04**: Stránky obsahují křížové odkazy mezi průvodcem a referencí
 
@@ -113,9 +113,9 @@
 | NAV-04 | Phase 2 | Complete |
 | NAV-05 | Phase 2 | Complete |
 | NAV-06 | Phase 2 | Complete |
-| START-01 | Phase 3 | Pending |
-| START-02 | Phase 3 | Pending |
-| START-03 | Phase 3 | Pending |
+| START-01 | Phase 3 | Complete |
+| START-02 | Phase 3 | Complete |
+| START-03 | Phase 3 | Complete |
 | START-04 | Phase 3 | Pending |
 | GUIDE-01 | Phase 3 | Pending |
 | GUIDE-02 | Phase 3 | Pending |
@@ -137,8 +137,8 @@
 | IMG-04 | Phase 5 | Pending |
 | IMG-05 | Phase 5 | Pending |
 | IMG-06 | Phase 5 | Pending |
-| UX-01 | Phase 3 | Pending |
-| UX-02 | Phase 3 | Pending |
+| UX-01 | Phase 3 | Complete |
+| UX-02 | Phase 3 | Complete |
 | UX-03 | Phase 3 | Pending |
 | UX-04 | Phase 4 | Pending |
 

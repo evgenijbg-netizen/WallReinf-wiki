@@ -101,7 +101,7 @@ Plans:
 **Plans:** 4 plans
 
 Plans:
-- [ ] 03-01-PLAN.md &mdash; Create screenshots directory and write Getting Started pages (pozadavky, instalace, pripojeni)
+- [x] 03-01-PLAN.md &mdash; Create screenshots directory and write Getting Started pages (pozadavky, instalace, pripojeni)
 - [ ] 03-02-PLAN.md &mdash; Write foundational pages (zakladni-workflow end-to-end demo, parametry hub page)
 - [ ] 03-03-PLAN.md &mdash; Write feature pages (otvory, trminky, diagonaly) with Settings coverage
 - [ ] 03-04-PLAN.md &mdash; Write output pages (preview with heatmap, validace, pdf-export)
@@ -201,7 +201,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 |-------|----------------|--------|-----------|
 | 1. Infrastructure and Deploy Pipeline | 0/2 | Planned | - |
 | 2. Navigation Skeleton | 1/1 | Complete | 2026-03-26 |
-| 3. User Guide Content | 0/4 | Planned | - |
+| 3. User Guide Content | 1/4 | In progress | - |
 | 4. Parameter Reference and FAQ | 0/TBD | Not started | - |
 | 5. Screenshots | 0/TBD | Not started | - |
 | 6. Polish and Launch | 0/TBD | Not started | - |
