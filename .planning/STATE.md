@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-01-PLAN.md
-last_updated: "2026-03-26T11:56:00Z"
-last_activity: 2026-03-26 -- Completed 03-01 getting-started pages
+stopped_at: Completed 03-02-PLAN.md
+last_updated: "2026-03-26T12:20:00Z"
+last_activity: 2026-03-26 -- Completed 03-02 zakladni-workflow and parametry pages
 progress:
   total_phases: 6
   completed_phases: 2
   total_plans: 7
-  completed_plans: 4
-  percent: 22
+  completed_plans: 5
+  percent: 29
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-25)
 
 **Core value:** Uživatel najde srozumitelný návod, jak plugin používat -- od spuštění přes nastavení parametrů až po generování a validaci výztuže.
-**Current focus:** Phase 3: User Guide Content (completed 03-01)
+**Current focus:** Phase 3: User Guide Content (completed 03-02)
 
 ## Current Position
 
 Phase: 3 of 6 (User Guide Content)
-Plan: 1 of 4 in current phase (completed)
+Plan: 2 of 4 in current phase (completed)
 Status: In progress
-Last activity: 2026-03-26 -- Completed 03-01 getting-started pages (pozadavky, instalace, pripojeni)
+Last activity: 2026-03-26 -- Completed 03-02 zakladni-workflow.md and parametry.md
 
-Progress: [██░░░░░░░░] 22%
+Progress: [███░░░░░░░] 29%
 
 ## Performance Metrics
 
@@ -70,6 +70,8 @@ Recent decisions affecting current work:
 - [Phase 03-user-guide-content]: Tekla Structures 2025 minimum version (gRPC API) confirmed from csproj
 - [Phase 03-user-guide-content]: .NET Framework 4.8 confirmed from TargetFramework net48 in WallReinf.csproj
 - [Phase 03-user-guide-content]: 1x1 placeholder PNGs created for all screenshot references so mkdocs --strict passes before Phase 5
+- [Phase 03-user-guide-content 03-02]: parametry.md follows workflow order (Orientace S1 first) not raw UI order — affects all subsequent parameter settings
+- [Phase 03-user-guide-content 03-02]: T-spoj requires Lemování (U-čka) — dependency documented with !!! warning admonition (XAML binding: IsEnabled binds to chkGenerateEdge)
 
 ### Pending Todos
 
@@ -81,6 +83,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T11:56:00Z
-Stopped at: Completed 03-01-PLAN.md
-Resume file: .planning/phases/03-user-guide-content/03-01-SUMMARY.md
+Last session: 2026-03-26T12:20:00Z
+Stopped at: Completed 03-02-PLAN.md
+Resume file: .planning/phases/03-user-guide-content/03-02-SUMMARY.md

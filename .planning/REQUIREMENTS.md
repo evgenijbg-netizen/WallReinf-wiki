@@ -29,11 +29,11 @@
 - [x] **START-01**: Stránka popisuje požadavky (Tekla Structures verze, .NET, OS)
 - [x] **START-02**: Stránka popisuje instalaci/spuštění pluginu
 - [x] **START-03**: Stránka popisuje připojení k modelu v Tekle
-- [ ] **START-04**: Stránka popisuje základní workflow (výběr stěny → nastavení → generování)
+- [x] **START-04**: Stránka popisuje základní workflow (výběr stěny → nastavení → generování)
 
 ### Obsah — Průvodce funkcemi
 
-- [ ] **GUIDE-01**: Stránka pro hlavní parametry (průměry prutů, krytí, rozteče, okrajové pruty)
+- [x] **GUIDE-01**: Stránka pro hlavní parametry (průměry prutů, krytí, rozteče, okrajové pruty)
 - [ ] **GUIDE-02**: Stránka pro otvory (detekce, nastavení, U-pruty kolem otvorů)
 - [ ] **GUIDE-03**: Stránka pro třmínky a interakce segmentů
 - [ ] **GUIDE-04**: Stránka pro diagonální pruty
@@ -67,7 +67,7 @@
 
 - [x] **UX-01**: Admonitions (warning, tip, note) jsou použity u důležitých upozornění
 - [x] **UX-02**: Na každé stránce je badge/admonition s verzí pluginu
-- [ ] **UX-03**: Terminologie v wiki odpovídá labelům v UI pluginu
+- [x] **UX-03**: Terminologie v wiki odpovídá labelům v UI pluginu
 - [ ] **UX-04**: Stránky obsahují křížové odkazy mezi průvodcem a referencí
 
 ## v2 Requirements
@@ -116,8 +116,8 @@
 | START-01 | Phase 3 | Complete |
 | START-02 | Phase 3 | Complete |
 | START-03 | Phase 3 | Complete |
-| START-04 | Phase 3 | Pending |
-| GUIDE-01 | Phase 3 | Pending |
+| START-04 | Phase 3 | Complete |
+| GUIDE-01 | Phase 3 | Complete |
 | GUIDE-02 | Phase 3 | Pending |
 | GUIDE-03 | Phase 3 | Pending |
 | GUIDE-04 | Phase 3 | Pending |
@@ -139,7 +139,7 @@
 | IMG-06 | Phase 5 | Pending |
 | UX-01 | Phase 3 | Complete |
 | UX-02 | Phase 3 | Complete |
-| UX-03 | Phase 3 | Pending |
+| UX-03 | Phase 3 | Complete |
 | UX-04 | Phase 4 | Pending |
 
 **Coverage:**
