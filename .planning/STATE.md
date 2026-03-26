@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-03-26T07:50:12.014Z"
+stopped_at: Completed 01-infrastructure-and-deploy-pipeline-01-01-PLAN.md
+last_updated: "2026-03-26T08:34:57.307Z"
 last_activity: 2026-03-26 -- Roadmap created
 progress:
   total_phases: 6
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  total_plans: 2
+  completed_plans: 1
   percent: 0
 ---
 
@@ -50,6 +50,7 @@ Progress: [░░░░░░░░░░] 0%
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 01-infrastructure-and-deploy-pipeline P01 | 2 | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -60,6 +61,9 @@ Recent decisions affecting current work:
 
 - [Roadmap]: Six-phase structure derived from dependency graph -- infra first, screenshots last (Tekla dependency)
 - [Roadmap]: Phase 6 carries no requirements -- it is a quality/integration gate
+- [Phase 01-infrastructure-and-deploy-pipeline]: site_url set from first commit with trailing slash to prevent broken CSS/nav on GitHub Pages
+- [Phase 01-infrastructure-and-deploy-pipeline]: permissions: contents: write at workflow level prevents silent deploy failure where CI is green but gh-pages branch is never written
+- [Phase 01-infrastructure-and-deploy-pipeline]: docs/index.md uses bold text (not hyperlinks) for section references to avoid broken internal links in mkdocs build --strict
 
 ### Pending Todos
 
@@ -71,6 +75,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T07:50:12.000Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-infrastructure-and-deploy-pipeline/01-CONTEXT.md
+Last session: 2026-03-26T08:34:57.302Z
+Stopped at: Completed 01-infrastructure-and-deploy-pipeline-01-01-PLAN.md
+Resume file: None

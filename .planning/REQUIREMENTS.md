@@ -7,13 +7,13 @@
 
 ### Infrastruktura
 
-- [ ] **INFRA-01**: Site je postaven na MkDocs Material 9.7.6 s pinovanými závislostmi (mkdocs==1.6.1, mkdocs-material==9.7.6) v requirements.txt
-- [ ] **INFRA-02**: Site je automaticky deployován na GitHub Pages přes GitHub Actions CI při push na main
-- [ ] **INFRA-03**: Fulltext vyhledávání funguje s českou jazykovou podporou (lang: cs)
-- [ ] **INFRA-04**: Site podporuje přepínání light/dark mode
-- [ ] **INFRA-05**: mkdocs.yml má správně nastavené site_url pro GitHub Pages
-- [ ] **INFRA-06**: .gitignore vylučuje site/ adresář
-- [ ] **INFRA-07**: GitHub Actions workflow má permissions: contents: write
+- [x] **INFRA-01**: Site je postaven na MkDocs Material 9.7.6 s pinovanými závislostmi (mkdocs==1.6.1, mkdocs-material==9.7.6) v requirements.txt
+- [x] **INFRA-02**: Site je automaticky deployován na GitHub Pages přes GitHub Actions CI při push na main
+- [x] **INFRA-03**: Fulltext vyhledávání funguje s českou jazykovou podporou (lang: cs)
+- [x] **INFRA-04**: Site podporuje přepínání light/dark mode
+- [x] **INFRA-05**: mkdocs.yml má správně nastavené site_url pro GitHub Pages
+- [x] **INFRA-06**: .gitignore vylučuje site/ adresář
+- [x] **INFRA-07**: GitHub Actions workflow má permissions: contents: write
 
 ### Navigace
 
@@ -100,13 +100,13 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INFRA-01 | Phase 1 | Pending |
-| INFRA-02 | Phase 1 | Pending |
-| INFRA-03 | Phase 1 | Pending |
-| INFRA-04 | Phase 1 | Pending |
-| INFRA-05 | Phase 1 | Pending |
-| INFRA-06 | Phase 1 | Pending |
-| INFRA-07 | Phase 1 | Pending |
+| INFRA-01 | Phase 1 | Complete |
+| INFRA-02 | Phase 1 | Complete |
+| INFRA-03 | Phase 1 | Complete |
+| INFRA-04 | Phase 1 | Complete |
+| INFRA-05 | Phase 1 | Complete |
+| INFRA-06 | Phase 1 | Complete |
+| INFRA-07 | Phase 1 | Complete |
 | NAV-01 | Phase 2 | Pending |
 | NAV-02 | Phase 2 | Pending |
 | NAV-03 | Phase 2 | Pending |

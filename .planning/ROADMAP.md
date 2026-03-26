@@ -43,7 +43,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] Check the GitHub Actions tab -- the latest workflow run is green with `contents: write` permission
 - [ ] Verify `site/` is not committed to the repository
 
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
 - [ ] 01-01-PLAN.md &mdash; Create all MkDocs config files, dependencies, CI workflow, index page, and logo
@@ -174,8 +174,7 @@ Plans:
 
 | Phase | Requirements | Count |
 |-------|-------------|-------|
-| 1. Infrastructure and Deploy Pipeline | INFRA-01 .. INFRA-07 | 7 |
-| 2. Navigation Skeleton | NAV-01 .. NAV-06 | 6 |
+| 1. Infrastructure and Deploy Pipeline | 1/2 | In Progress|  | 2. Navigation Skeleton | NAV-01 .. NAV-06 | 6 |
 | 3. User Guide Content | START-01 .. START-04, GUIDE-01 .. GUIDE-07, UX-01, UX-02, UX-03 | 14 |
 | 4. Parameter Reference and FAQ | REF-01 .. REF-03, FAQ-01 .. FAQ-04, UX-04 | 8 |
 | 5. Screenshots | IMG-01 .. IMG-06 | 6 |
