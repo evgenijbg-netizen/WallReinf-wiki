@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 1: Infrastructure and Deploy Pipeline** - MkDocs Material site with working CI/CD deploy to GitHub Pages
 - [ ] **Phase 2: Navigation Skeleton** - Complete page structure with stub files and explicit nav configuration
 - [x] **Phase 3: User Guide Content** - All workflow-based guide pages written with prose, admonitions, and screenshot placeholders (completed 2026-03-26)
-- [ ] **Phase 4: Parameter Reference and FAQ** - Parameter tables, FAQ with 10+ known problems, and cross-links between guide and reference
+- [x] **Phase 4: Parameter Reference and FAQ** - Parameter tables, FAQ with 10+ known problems, and cross-links between guide and reference (completed 2026-03-26)
 - [ ] **Phase 5: Screenshots** - All screenshots captured, placed, and captioned with plugin version
 - [ ] **Phase 6: Polish and Launch** - Final audit, theme tuning, strict build check, launch-ready site
 
@@ -128,7 +128,7 @@ Plans:
 - [ ] Verify FAQ covers all three required areas: Tekla connection (FAQ-02), generation (FAQ-03), validation (FAQ-04)
 - [ ] Click 3 cross-links from guide to reference and 3 from reference to guide -- all resolve correctly
 
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 
 Plans:
 - [ ] 04-01-PLAN.md &mdash; Write complete parameter reference table (10 UI sections) and update reference index
@@ -188,7 +188,7 @@ Plans:
 | Phase | Requirements | Count |
 |-------|-------------|-------|
 | 1. Infrastructure and Deploy Pipeline | 1/2 | In Progress|  | 2. Navigation Skeleton | NAV-01 .. NAV-06 | 6 |
-| 3. User Guide Content | 4/4 | Complete    | 2026-03-26 | 4. Parameter Reference and FAQ | 1/2 | In Progress|  | 5. Screenshots | IMG-01 .. IMG-06 | 6 |
+| 3. User Guide Content | 4/4 | Complete    | 2026-03-26 | 4. Parameter Reference and FAQ | 2/2 | Complete   | 2026-03-26 | 5. Screenshots | IMG-01 .. IMG-06 | 6 |
 | 6. Polish and Launch | (integration/quality -- no new requirements) | 0 |
 | **Total** | | **41** |
 

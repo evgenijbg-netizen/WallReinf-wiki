@@ -49,10 +49,10 @@
 
 ### Obsah — FAQ
 
-- [ ] **FAQ-01**: Minimálně 10 známých problémů s řešením
-- [ ] **FAQ-02**: FAQ obsahuje problémy s připojením k Tekle
-- [ ] **FAQ-03**: FAQ obsahuje problémy s generováním výztuže
-- [ ] **FAQ-04**: FAQ obsahuje problémy s validací
+- [x] **FAQ-01**: Minimálně 10 známých problémů s řešením
+- [x] **FAQ-02**: FAQ obsahuje problémy s připojením k Tekle
+- [x] **FAQ-03**: FAQ obsahuje problémy s generováním výztuže
+- [x] **FAQ-04**: FAQ obsahuje problémy s validací
 
 ### Screenshoty
 
@@ -68,7 +68,7 @@
 - [x] **UX-01**: Admonitions (warning, tip, note) jsou použity u důležitých upozornění
 - [x] **UX-02**: Na každé stránce je badge/admonition s verzí pluginu
 - [x] **UX-03**: Terminologie v wiki odpovídá labelům v UI pluginu
-- [ ] **UX-04**: Stránky obsahují křížové odkazy mezi průvodcem a referencí
+- [x] **UX-04**: Stránky obsahují křížové odkazy mezi průvodcem a referencí
 
 ## v2 Requirements
 
@@ -127,10 +127,10 @@
 | REF-01 | Phase 4 | Complete |
 | REF-02 | Phase 4 | Complete |
 | REF-03 | Phase 4 | Complete |
-| FAQ-01 | Phase 4 | Pending |
-| FAQ-02 | Phase 4 | Pending |
-| FAQ-03 | Phase 4 | Pending |
-| FAQ-04 | Phase 4 | Pending |
+| FAQ-01 | Phase 4 | Complete |
+| FAQ-02 | Phase 4 | Complete |
+| FAQ-03 | Phase 4 | Complete |
+| FAQ-04 | Phase 4 | Complete |
 | IMG-01 | Phase 5 | Pending |
 | IMG-02 | Phase 5 | Pending |
 | IMG-03 | Phase 5 | Pending |
@@ -140,7 +140,7 @@
 | UX-01 | Phase 3 | Complete |
 | UX-02 | Phase 3 | Complete |
 | UX-03 | Phase 3 | Complete |
-| UX-04 | Phase 4 | Pending |
+| UX-04 | Phase 4 | Complete |
 
 **Coverage:**
 - v1 requirements: 41 total
