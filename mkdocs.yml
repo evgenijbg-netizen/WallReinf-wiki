@@ -1,0 +1,43 @@
+site_name: Wall Reinforcement Wizard
+site_url: https://evgenijbg-netizen.github.io/WallReinf-wiki/
+
+theme:
+  name: material
+  language: cs
+  logo: assets/logo.png
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Přepnout na tmavý režim
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Přepnout na světlý režim
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: cs
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+nav:
+  - Domů: index.md
