@@ -1,38 +1,29 @@
 # Požadavky
 
-!!! info "Verze pluginu: [VERZE]"
-    Tato stránka popisuje chování pluginu verze [VERZE].
-
-Tato stránka uvádí, co musí být nainstalováno a spuštěno před použitím pluginu Wall Reinforcement Wizard.
+Tato stránka uvádí podmínky pro spuštění Wall Reinforcement Wizard a práci s Tekla modelem.
 
 ## Tekla Structures
 
-Plugin je rozšíření (WPF aplikace) pro Tekla Structures. Před spuštěním pluginu musí být Tekla Structures spuštěna s otevřeným modelem.
+Wall Reinforcement Wizard je 64bitová WPF aplikace pro Tekla Structures. Pro načítání stěn, generování výztuže a práci s modelem musí být Tekla Structures spuštěná s otevřeným modelem.
 
-- Minimální verze: **Tekla Structures 2025** (plugin využívá Tekla Open API 2025)
-- Plugin komunikuje s Tekla přes gRPC — model musí být aktivní a přístupný
+Použijte instalační balíček určený pro svou verzi Tekla Structures. Aktuální zdrojový projekt má výchozí cílení na Tekla Structures 2025.0 a podporuje sestavení balíčku také pro Tekla Structures 2026.0.
 
 !!! warning "Pozor"
-    Plugin nelze spustit bez otevřeného modelu v Tekla Structures. Pokud model není otevřen, připojení selže.
-
-![Verze Tekla Structures](../assets/screenshots/pozadavky-tekla-verze.png)
-
-*[VERZE] — Informace o verzích. Zachytit: About dialog Tekla Structures s verzí (Help → About Tekla Structures).*
+    Aplikace se bez aktivního Tekla modelu může otevřít, ale operace nad modelem nebudou dostupné.
 
 ## Operační systém
 
-- **Windows 10** nebo novější (64-bit)
-- 64-bit OS je vyžadováno — Tekla Structures i plugin jsou 64-bitové aplikace
+- 64bitový Windows
+- 64bitová instalace Tekla Structures odpovídající instalačnímu balíčku
+
+!!! note "K OVĚŘENÍ"
+    Zdrojový projekt potvrzuje 64bitový cíl aplikace, ale neurčuje minimální podporovanou verzi Windows. Konkrétní minimální verzi proto zde neuvádíme.
 
 ## .NET Framework
 
-Plugin vyžaduje **.NET Framework 4.8**.
-
-.NET Framework 4.8 je součástí Windows 10 (aktualizace od roku 2019) a Windows 11. Na starších sestavách Windows 10 může být nutná ruční instalace.
-
-!!! warning "Pozor"
-    Plugin vyžaduje přesně .NET Framework 4.8. Starší verze způsobí chybu při spuštění. Verze lze ověřit v Ovládacích panelech → Programy → Zapnout nebo vypnout funkce systému Windows.
+Aplikace cílí na **.NET Framework 4.8**. Pokud se aplikace nespustí, ověřte instalaci .NET Frameworku ve Windows nebo se obraťte na správce IT.
 
 ## Viz také
 
-- [FAQ — Připojení k Tekla Structures](../faq.md#pripojeni-k-tekla-structures)
+- [Instalace a spuštění](instalace.md)
+- [Připojení k modelu](pripojeni.md)

@@ -1,75 +1,41 @@
 # Základní workflow
 
-!!! info "Verze pluginu: [VERZE]"
-    Tato stránka popisuje chování pluginu verze [VERZE].
+Tato stránka provádí procesem vyztužení jedné stěny: od výběru přes nastavení parametrů až po generování a kontrolu.
 
-Tato stránka provádí kompletním procesem vyztužení jedné stěny — od výběru přes nastavení parametrů až po generování a kontrolu.
+## 1. Načtěte a vyberte stěnu
 
-## Výběr stěny
+Nejprve musí být aplikace připojená k otevřenému Tekla modelu. V horní liště zvolte režim **Prefix** nebo **Stěna**, zadejte hledanou hodnotu a klikněte na **Načíst**. Poté vyberte stěnu v nabídce **Stěna**.
 
-Před výběrem stěny musí být plugin připojen k otevřenému modelu v Tekla Structures. Podrobnosti viz [Připojení k modelu](pripojeni.md).
+K pohybu mezi načtenými stěnami použijte tlačítka **Předchozí stěna (◀)** a **Další stěna (▶)**. Pokud je stěna již označena přímo v Tekla Structures, můžete po načtení seznamu použít ikonu **Vybrat z Tekla**.
 
-1. Do pole **Prefix** zadejte prefix označení stěn (např. `1W`).
-2. Klikněte na **Načíst** — plugin načte všechny stěny z modelu odpovídající prefixu a naplní rozbalovací nabídku **Stěna**.
-3. Vyberte stěnu z rozbalovací nabídky **Stěna**. Plugin okamžitě zobrazí live preview plánované výztuže v pravém panelu.
+## 2. Nastavte parametry
 
-Mezi stěnami se pohybujte tlačítky **Předchozí stěna (◀)** a **Další stěna (▶)**. Pokud chcete přejít na stěnu vybranou přímo v modelu, použijte ikonu **Vybrat z Tekla**.
+Parametry jsou v levém panelu rozděleny do skupin. Ve skupině **Výztuž** nastavte parametry S1/S2, krytí, lemování a odsazení. Ve skupině **Okrajové podmínky** nastavte podmínky navazujících konstrukcí podle konkrétní stěny.
 
-![Horní lišta pluginu — pole Prefix, tlačítko Načíst a výběr stěny](../assets/screenshots/top-bar-nacist-stena.png)
+Pro podrobný popis všech voleb použijte [Hlavní parametry](parametry.md). Nastavení pro prostupy popisují [Prostupy](otvory.md), pro třmínky a prapory [Třmínky a prapory](trminky.md) a pro šikmou výztuž [Šikmá výztuž](diagonaly.md).
 
-*[VERZE] — Horní lišta pluginu. Zachytit: pole Prefix s hodnotou `1W`, tlačítko Načíst, rozbalovací nabídka Stěna s vybranou stěnou, počítadlo stěn (např. 3 / 12).*
+## 3. Zkontrolujte náhled a generujte
 
-## Nastavení parametrů
+V pravém panelu zkontrolujte náhled plánované výztuže — zejména rozložení prutů, okrajovou výztuž a prostupy. Poté klikněte na **Generovat**.
 
-Hlavní dialog pluginu obsahuje tři sekce (expandery). Pro typické vyztužení stěny postupujte takto:
+!!! warning "Nahrazení existující výztuže"
+    Generování nahrazuje existující výztuž vytvořenou aplikací WallReinf pro vybranou stěnu. Pokud aplikace nedokáže existující data bezpečně určit nebo odstranit, generaci zastaví před vložením nové výztuže.
 
-1. Otevřete sekci **Výztuž** — nastavte průměry a rozteče svislé a vodorovné výztuže pro S1 (vnější stranu) a S2 (vnitřní stranu). Pokud jsou potřeba okrajové U-pruty, zaškrtněte **Lemování (U-čka)** a zvolte průměr.
-2. Otevřete sekci **Krytí a okraje** — zvolte hodnotu krytí z nabídky **Krytí** (30–60 mm) a dle potřeby upravte odsazení od okraje.
-3. Otevřete sekci **Detaily** — nastavte okrajové podmínky (**Volný konec stěny**, **Pokračuje výš**) a případně T-spoje s navazujícími stěnami.
+Po vygenerování můžete v kontextové nabídce **Stěna** nastavit stav:
 
-Podrobný popis všech parametrů viz [Hlavní parametry](parametry.md).
+- **Označit jako hotovo** — pouze pro stěnu s výztuží WallReinf.
+- **Označit ke kontrole** — pouze pro stěnu s výztuží WallReinf.
+- **Označit bez výztuže** — pouze pro stěnu bez výztuže.
 
-Pro nastavení výztuže kolem prostupů viz [Prostupy](otvory.md). Pro třmínky a prapory viz [Třmínky a prapory](trminky.md). Pro šikmou výztuž v rozích viz [Šikmá výztuž](diagonaly.md).
+Stavové filtry v horní liště umožňují zobrazit nebo skrýt hotové stěny, stěny ke kontrole a stěny bez výztuže.
 
-![Hlavní dialog pluginu se všemi třemi expandery](../assets/screenshots/hlavni-dialog-expandery.png)
+## 4. Přidejte poznámku podle potřeby
 
-*[VERZE] — Hlavní okno pluginu se třemi expandery (Výztuž, Krytí a okraje, Detaily) rozbalenými. Zachytit: typické hodnoty průměrů a roztečí, zaškrtnuté Lemování (U-čka).*
-
-## Generování výztuže
-
-1. Zkontrolujte výztuž v preview panelu vpravo — ověřte rozložení prutů, okrajovou výztuž a prostupy.
-2. Klikněte na **Generovat** — plugin vytvoří výztuž ve Tekla modelu.
-
-!!! warning "Pozor — přepis existující výztuže"
-    **Generovat** přepíše veškerou existující výztuž dané stěny. Před generováním zkontrolujte parametry v preview panelu.
-
-Po vygenerování klikněte pravým tlačítkem na nabídku **Stěna** a označte stěnu přes kontextové menu:
-
-- **Označit jako hotovo** — stěna je vyztužena a zkontrolována.
-- **Označit ke kontrole** — stěna čeká na přezkoumání.
-- **Označit bez výztuže** — stěna nebude vyztužena (např. atika, parapet).
-
-!!! tip "Tip — sledování postupu"
-    Průběh projektu sledujte pomocí filtrů stavu v horní liště. Přepínejte zobrazení stěn dle stavu: hotovo, ke kontrole, bez výztuže.
-
-![Tlačítko Generovat a výsledný stav stěny](../assets/screenshots/generovat-stav-steny.png)
-
-*[VERZE] — Tlačítko Generovat v hlavním dialogu. Zachytit: stav před generováním (preview viditelný) a kontextové menu se stavovými volbami.*
-
-## Poznámky ke stěně
-
-Plugin umožňuje přidat k libovolné stěně textové poznámky. Klikněte na ikonu **Poznámka ke stěně** (ikona poznámky v horní liště). Otevře se okno pro zadání textu.
-
-- Poznámky jsou uloženy per stěna a přetrvávají mezi relacemi.
-- Slouží k označení stěn vyžadujících zvláštní pozornost — například nestandardní detail, čekání na podklady nebo připomínka pro kolegu.
-
-![Okno Poznámka ke stěně](../assets/screenshots/poznamka-ke-stene.png)
-
-*[VERZE] — Okno Poznámka ke stěně s textovým polem. Zachytit: prázdné nebo vzorově vyplněné pole poznámky.*
+Kliknutím na ikonu **Poznámka ke stěně** otevřete dialog pro textovou poznámku. Poznámka se ukládá do vlastnosti `Comment` vybrané stěny v Tekla modelu, takže je vázaná na tento modelový prvek.
 
 ## Viz také
 
-- [Tabulka parametrů — Výztuž](../reference/parametry.md#vyztuz)
-- [Tabulka parametrů — Krytí a okraje](../reference/parametry.md#kryti-a-okraje)
-- [Tabulka parametrů — Detaily](../reference/parametry.md#detaily)
-- [FAQ — Generování výztuže](../faq.md#generovani-vyztuze)
+- [Referenční parametry hlavního okna](../reference/parametry.md#hlavni-okno)
+- [Okrajové podmínky](okrajove-podminky.md)
+- [Nastavení](../reference/parametry.md#nastaveni)
+- [FAQ — Generování a opakovaná úprava](../faq.md#generovani-a-opakovana-uprava)

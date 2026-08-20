@@ -1,62 +1,41 @@
 # Připojení k modelu
 
-!!! info "Verze pluginu: [VERZE]"
-    Tato stránka popisuje chování pluginu verze [VERZE].
-
-Tato stránka popisuje, jak ověřit připojení pluginu k modelu a jak načíst stěny pro vyztužení.
+Tato stránka popisuje ověření připojení k Tekla modelu a načtení stěn pro vyztužení.
 
 ## Ověření připojení
 
-Po spuštění pluginu zkontrolujte, že je připojení k Tekla modelu funkční.
+1. V horní liště hlavního okna klikněte na ikonu **Nastavení**.
+2. V dialogu **Nastavení** otevřete skupinu **Připojení**.
+3. Klikněte na **Test připojení**.
+4. Při úspěchu se pod tlačítkem zobrazí stav připojení.
 
-1. Klikněte na ikonu **Nastavení** v pravém horním rohu hlavního okna.
-2. V dialogu **Nastavení** přejděte do sekce **Připojení**.
-3. Klikněte na tlačítko **Test připojení**.
-4. Status pod tlačítkem se změní na `Status: Připojeno` při úspěšném připojení.
-
-!!! warning "Pozor"
-    Pokud **Test připojení** selže, zkontrolujte, že Tekla Structures je spuštěna a model je otevřen. Plugin komunikuje s Tekla přes gRPC — připojení vyžaduje aktivní model, ne jen spuštěnou aplikaci.
-
-![Sekce Připojení v dialogu Nastavení](../assets/screenshots/pripojeni-nastaveni.png)
-
-*[VERZE] — Dialog Nastavení, sekce Připojení. Zachytit: tlačítko Test připojení a status text "Status: Připojeno".*
+Pokud test selže, ověřte, že Tekla Structures běží a že je otevřený model. Aplikace pro práci s modelem vyžaduje aktivní připojení k Tekla modelu.
 
 ## Načtení stěn
 
-Po ověření připojení načtěte stěny z modelu do dropdownu **Stěna**.
+V levé části horní lišty zvolte režim načtení:
 
-1. Do pole **Prefix** zadejte prefix označení stěn v modelu (např. `1W` pro stěny s prefixem `1W`).
-2. Klikněte na tlačítko **Načíst**.
-3. Dropdown **Stěna** se naplní nalezenými stěnami.
-4. Vyberte stěnu z dropdownu — plugin ji zobrazí v preview panelu vpravo.
+- **Prefix** — načte skupinu stěn se zadaným prefixem, například `1W`.
+- **Stěna** — načte jednu stěnu podle jejího úplného identifikátoru, například `1W12`.
 
-!!! tip "Tip"
-    Prefix je volitelný. Prázdné pole načte všechny stěny v modelu. Pro velké modely doporučujeme použít prefix pro rychlejší filtrování.
+Poté zadejte hodnotu do vstupního pole a klikněte na **Načíst**. Nalezené stěny se zobrazí v nabídce **Stěna**; výběrem stěny se připraví její parametry a náhled.
+
+!!! note "K OVĚŘENÍ"
+    Chování prázdné hodnoty v režimu **Prefix** není v uživatelském rozhraní výslovně popsáno. Pro předvídatelný výsledek vždy zadejte prefix nebo úplný identifikátor.
 
 ### Filtr materiálu
 
-V **Nastavení → Načítání stěn** lze nastavit **Filtr materiálu (prefix)**. Načtou se pouze prvky, jejichž materiál začíná zadaným prefixem (např. `C` pro beton). Tím se z výběru vyloučí ocelové nebo dřevěné prvky.
+V **Nastavení → Načítání stěn** lze vyplnit **Filtr materiálu (prefix)**. Načtou se jen prvky, jejichž materiál tímto prefixem začíná; například `C` pro beton. Prázdná hodnota filtr nepoužije.
 
-### Navigace mezi stěnami
+### Navigace a zobrazení
 
-Po načtení stěn můžete přecházet mezi nimi bez opakovaného výběru z dropdownu:
-
-- **Předchozí stěna (◀)** — přechod na předchozí stěnu v seznamu
-- **Další stěna (▶)** — přechod na následující stěnu v seznamu
-- **Vybrat z Tekla** — načte stěnu aktuálně vybranou v Tekla Structures (výběr musí být proveden v Tekla před kliknutím)
-- **Zobrazit pouze vybranou stěnu** — přepne Tekla pohled tak, aby byla viditelná pouze vybraná stěna
+- **Předchozí stěna (◀)** a **Další stěna (▶)** mění vybranou stěnu v načteném seznamu.
+- **Vybrat z Tekla** vybere z načteného seznamu stěnu, která je právě označena v Tekla Structures. Nejdříve je nutné načíst seznam stěn.
+- Ikona oka přepíná zobrazení pouze vybrané stěny v Tekla pohledu.
 
 ### Stav stěny
 
-Každé stěně lze přiřadit stav kliknutím pravým tlačítkem na název stěny v dropdownu:
-
-- **Hotovo** — výztuž je vygenerována a schválena
-- **Ke kontrole** — výztuž čeká na kontrolu
-- **Bez výztuže** — stěna nebude vyztužena
-
-![Hlavní okno po načtení stěn](../assets/screenshots/pripojeni-nacist-steny.png)
-
-*[VERZE] — Hlavní okno pluginu, top bar po načtení stěn. Zachytit: vyplněný Prefix, Stěna dropdown s vybranou stěnou, tlačítka navigace (◀ ▶), ikona Nastavení.*
+Kontextová nabídka výběru **Stěna** umožňuje označit stěnu jako **Hotovo**, **Ke kontrole** nebo **Bez výztuže**. Aplikace nedovolí označit stěnu s výztuží jako „Bez výztuže“ ani označit stěnu bez výztuže jako „Ke kontrole“.
 
 ---
 
@@ -64,4 +43,5 @@ Pokračujte na [Základní workflow](zakladni-workflow.md) pro kompletní postup
 
 ## Viz také
 
-- [FAQ — Připojení k Tekla Structures](../faq.md#pripojeni-k-tekla-structures)
+- [Požadavky](pozadavky.md)
+- [Instalace a spuštění](instalace.md)

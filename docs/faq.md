@@ -1,102 +1,88 @@
 # FAQ
 
-!!! info "Verze pluginu: [VERZE]"
-    Tato stránka popisuje chování pluginu verze [VERZE].
-
-Tato stránka shromažďuje časté problémy a jejich řešení. Každá položka uvádí konkrétní opravu a odkaz na příslušnou stránku průvodce nebo referenční tabulky.
+!!! info "Verze pluginu: 2.5.0"
+    Odpovědi vycházejí ze zdrojového stavu WallReinf 2.5.0. Výsledek vždy ověřte v konkrétním Tekla modelu.
 
 ## Připojení k Tekla Structures
 
-### Plugin hlásí „Tekla není spuštěna"
+### Plugin hlásí, že není k dispozici připojení k modelu
 
-Tekla Structures není otevřena nebo model není načten. Otevřete Tekla Structures, načtěte model a znovu spusťte plugin. Pouhé spuštění aplikace nestačí — model musí být aktivní.
-
-Viz [Připojení k modelu](pruvodce/pripojeni.md) pro postup ověření připojení.
-
-### „Nelze připojit k Tekle" při testu připojení
-
-Plugin komunikuje přes gRPC — model musí být aktivní, ne jen Tekla. Zkontrolujte, zda je model otevřen. Pokud problém přetrvá, restartujte Tekla Structures.
+Otevřete Tekla Structures s aktivním modelem a v dialogu **Nastavení** spusťte **Test připojení**. Aplikace ověřuje připojení k Tekla modelu; vlastní transportní mechanismus není pro uživatelský postup podstatný.
 
 Viz [Připojení k modelu](pruvodce/pripojeni.md).
 
-### Status po „Test připojení" zůstává „Neověřeno"
+### Status po „Test připojení“ zůstává „Neověřeno“
 
-Klikněte přímo na tlačítko **Test připojení**; výsledek se zobrazí pod tlačítkem. Pokud status zůstává Neověřeno, model není aktivní.
+Klikněte přímo na tlačítko **Test připojení** v dialogu **Nastavení**. Pokud se stav nezmění nebo test selže, ověřte, že je otevřen aktivní Tekla model, a případně Tekla Structures restartujte.
 
 Viz [Připojení k modelu](pruvodce/pripojeni.md#overeni-pripojeni).
 
-### Dropdown Stěna je po kliknutí Načíst prázdný
+### Načtení stěn nevrací očekávané položky
 
-Zkontrolujte hodnotu v poli **Prefix**. Prázdné pole načte všechny stěny; chybný prefix nevrátí žádné výsledky. Zkontrolujte také Nastavení → Načítání stěn → Filtr materiálu.
+Zkontrolujte filtr materiálu (prefix) v **Nastavení**. Chování prázdného filtru a kombinace s konkrétním typem objektu je **K OVĚŘENÍ** pro váš model.
 
-Viz [Připojení k modelu](pruvodce/pripojeni.md) a [Parametry — Nastavení — Prostupy](reference/parametry.md#nastaveni-prostupy).
+Viz [Připojení k modelu](pruvodce/pripojeni.md#nacteni-sten) a [Parametry](reference/parametry.md).
 
-## Generování výztuže
+## Generování a opakovaná úprava
 
-### Generovat přepíše existující výztuž
+### Co se stane s dříve vytvořenou výztuží WallReinf?
 
-Před generováním zkontrolujte parametry v preview panelu. Přepis je záměrný — plugin vždy nahradí veškerou existující výztuž dané stěny.
+Při generování může aplikace nahradit dříve vytvořenou výztuž WallReinf příslušné stěny. Aplikace používá uložený stav a identitu vytvořených objektů; přesný dopad na ručně vytvořené nebo cizí pruty je **K OVĚŘENÍ** před nasazením do produkčního modelu.
 
 Viz [Základní workflow](pruvodce/zakladni-workflow.md).
 
+### Kdy použít Re-edit?
+
+Tlačítko **Re-edit** je určeno pro bezpečnou opakovanou úpravu stěny s uloženým stavem WallReinf. Může být zablokováno například po změně topologie, při nejednoznačné identitě prutů nebo po ruční úpravě sledovaných objektů.
+
+### Co znamená převzetí zkopírované výztuže?
+
+Při práci s kopií stěny může aplikace nabídnout kontrolované převzetí zkopírované výztuže. Dialog rozlišuje objekty k převzetí, ponechání, odstranění identických kopií a konflikty. Výsledek vždy zkontrolujte ve vybraném Tekla modelu.
+
+### Optimalizace délek nenachází žádné pruty
+
+Optimalizace pracuje se skutečnými přímými pruty WallReinf v modelu; samotný náhled není vstupem pro optimalizační změnu. Nejprve proto výztuž vygenerujte a ověřte, že je model připojen.
+
+## Otvory, lemování a diagonály
+
 ### U-pruty kolem prostupů se negenerují
 
-Zaškrtněte volbu **Lemování (U-čka)** v expanderu **Výztuž**. Bez aktivního lemování se U-pruty kolem prostupů negenerují.
+Zkontrolujte parametry lemování a prostupů a následně výsledek v preview i Tekla modelu. Přesná závislost všech detailů na geometrii otvoru je **K OVĚŘENÍ**.
 
-Viz [Otvory a prostupy](pruvodce/otvory.md) a [Parametry — Výztuž](reference/parametry.md#vyztuz).
+Viz [Otvory a prostupy](pruvodce/otvory.md) a [Parametry](reference/parametry.md).
 
-### T-spoj (závlače) je zašedlý
+### Diagonální pruty a pruty kolem prostupů
 
-Zaškrtněte **Lemování (U-čka)**. T-spoj vyžaduje aktivní lemování.
+V hlavním okně je k dispozici volba **Šikmá výztuž v rozích (45°)**. Vztah mezi jejím průměrem a průměrem prutů kolem prostupů je pro tuto verzi **K OVĚŘENÍ**.
 
-Viz [Hlavní parametry — Detaily](pruvodce/parametry.md#t-spoj-navazujici-steny) a [Parametry — Detaily](reference/parametry.md#detaily).
+Viz [Diagonální pruty](pruvodce/diagonaly.md).
 
-### Plugin generuje příliš mnoho třmínků nebo praporů
+### Dolní vytrnování vytvořilo závlače
 
-Upravte prahy v Nastavení → Třmínky a prapory. Snižte **Prah třmínku** pro kratší segmenty nebo zvyšte **Prah praporu**.
+Nemělo by k tomu dojít: pro dolní volbu **Vytrnování z desky** aplikace nevytváří závlače. Pokud výsledek v modelu neodpovídá, nepokračujte v generování bez kontroly a zaznamenejte geometrii stěny a zvolené okrajové podmínky.
 
-Viz [Třmínky a prapory](pruvodce/trminky.md) a [Parametry — Nastavení — Třmínky a prapory](reference/parametry.md#nastaveni-trminky-a-prapory).
-
-### Prah praporu nastavený níže než Prah třmínku — neočekávané chování
-
-**Prah praporu** musí být vždy vyšší než **Prah třmínku**. Plugin tuto podmínku nekontroluje automaticky.
-
-Viz [Třmínky a prapory](pruvodce/trminky.md#prahy-v-nastaveni).
-
-### Orientace S1 — průměry přiřazeny k opačné vrstvě
-
-Nastavte **Orientaci S1** jako první krok před zadáním průměrů a roztečí. Změna orientace po zadání hodnot přehodí přiřazení vrstev.
-
-Viz [Hlavní parametry](pruvodce/parametry.md#orientace-s1) a [Parametry — Výztuž](reference/parametry.md#vyztuz).
-
-### Diagonální pruty a U-pruty mají stejný průměr — nelze oddělit
-
-V aktuální verzi pluginu sdílejí diagonální pruty průměr s U-pruty z pole **Průměr:** v sekci **Prostupy**. Samostatné nastavení průměru diagonál není k dispozici.
-
-Viz [Diagonální pruty](pruvodce/diagonaly.md) a [Parametry — Výztuž](reference/parametry.md#vyztuz).
-
-## Validace
+## Validace a PDF
 
 ### Validační okno je prázdné
 
-Nejprve vygenerujte výztuž přes **Generovat**. Validační okno zobrazuje skutečnou výztuž z Tekla modelu, ne plánovaný návrh. Prázdné plátno = výztuž ještě nebyla vygenerována.
+Nejprve vygenerujte výztuž a potom otevřete validaci. Validační okno pracuje se skutečnou výztuží načtenou z Tekla modelu, ne pouze s plánovaným návrhem.
 
 Viz [Validační okno](pruvodce/validace.md).
 
-### Validační okno neodpovídá aktuálnímu stavu modelu
+### Po úpravě délek v preview se pruty kříží s okraji nebo otvory
 
-Klikněte na **Obnovit** v záhlaví validačního okna. Data se znovu načtou z Tekla modelu.
+Před generováním spusťte kontrolu kolizí v preview. U složitější geometrie nebo po ručních úpravách je výsledek kontroly **K OVĚŘENÍ** také ve vlastním modelu.
 
-Viz [Validační okno](pruvodce/validace.md#skutecna-vyztuz-z-tekla-modelu).
+Viz [Preview panel](pruvodce/preview.md#upravy-vybranych-rad).
 
-### PDF export selhal s chybou
+### PDF export selhal
 
-Ověřte, že jsou data ve validačním okně načtena (klikněte Obnovit). Export je možný pouze pokud validační okno obsahuje výztuž. Chyba „Není co exportovat" znamená prázdné validační okno.
+Ověřte, že jsou data ve validačním okně načtena. Pokud validační okno neobsahuje výztuž, není co exportovat.
 
 Viz [PDF export](pruvodce/pdf-export.md) a [Validační okno](pruvodce/validace.md).
 
-### Po úpravě délek v preview se pruty kříží s okraji nebo otvory
+## Licence
 
-Po každé úpravě délek klikněte na **Zkontrolovat kolize** (nebo **Kolize** v inline doku). Generujte až po ověření, že kolize nejsou hlášeny.
+### Aplikace při startu požaduje aktivaci licence
 
-Viz [Preview panel](pruvodce/preview.md#upravy-delek).
+Postupujte podle aktivačního dialogu. Aplikace používá uložený licenční token a při potřebě jeho obnovení může komunikovat s licenční službou. Dostupnost síťové služby a podmínky konkrétní licence jsou **K OVĚŘENÍ**.

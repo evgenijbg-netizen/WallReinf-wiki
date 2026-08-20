@@ -1,51 +1,29 @@
 # PDF export
 
-!!! info "Verze pluginu: [VERZE]"
-    Tato stránka popisuje chování pluginu verze [VERZE].
+Exporty jsou dostupné z [Validačního okna](validace.md): **Export PDF**, **Export PNG** a **Tisk**.
 
-Export grafického pohledu na výztuž jako PDF, PNG nebo tisk — vše přímo z validačního okna.
+## PDF
 
-## Vytvoření exportu
+Export PDF vytváří validační report pro vybrané stěny. Při exportu se nejprve vyberou stěny a potom soubor PDF; aplikace do něj sestaví data a geometrii validačních vrstev. Nabídka exportu obsahuje také **Hromadný export**.
 
-Export probíhá z okna **Grafická validace výztuže**. Postup:
+!!! important "PDF není snímek obrazovky"
+    PDF report není prosté uložení aktuálně viditelného plátna. Neuvádějte proto, že automaticky zachová aktuální přepínače vrstev nebo průhlednost, dokud to neověříte v běžící aplikaci.
 
-1. Otevřete [Validační okno](validace.md) po vygenerování výztuže.
-2. Nastavte viditelnost vrstev — exportuje se přesně to, co je zobrazeno v plátně.
-3. Zvolte typ exportu:
-   - **Export PDF** — uloží pohled do PDF souboru.
-   - **Export PNG** — uloží pohled jako PNG obrázek.
-   - **Tisk** — odešle pohled na tiskárnu.
+## PNG a tisk
 
-!!! tip "Tip — Před exportem upravte vrstvy"
-    Vypněte vrstvy, které v exportu nepotřebujete. Export zachytí přesně to, co vidíte ve validačním okně — včetně zapnutých/vypnutých vrstev a nastavené průhlednosti.
+**Export PNG** uloží obraz validačního pohledu jako obrázek. **Tisk** předá validační plátno dialogu systému Windows pro tisk.
 
-![Validační okno s tlačítky Export PDF, Export PNG a Tisk](../assets/screenshots/validace-export-tlacitka.png)
+!!! note "K OVĚŘENÍ"
+    Předávají-li PNG a tisk přesně aktuální viditelnost skupin, nastavení průhlednosti a měřítko, ověřte v běžící aplikaci na reprezentativní stěně. Nezaměňujte toto chování s hromadným PDF reportem.
 
-*[VERZE] — Validační okno s viditelným exportním panelem. Zachytit: tlačítka Export PDF, Export PNG a Tisk, plátno s výztuží, nastavené vrstvy.*
+## Doporučený postup
 
-## Obsah exportu
-
-Export obsahuje grafický pohled na stěnu s viditelnou výztuží tak, jak ji zobrazuje validační okno:
-
-- Barevné kódování odpovídá legendě vrstev (Svislá Class 3, Vodorovná Class 6, atd.).
-- Viditelnost vrstev odpovídá stavu v okně v okamžiku exportu.
-- Průhlednost vrstev se v exportu zachová.
-- Měřítko a rozměry závisí na velikosti stěny v modelu.
-
-![Příklad exportovaného PDF s výztuží stěny](../assets/screenshots/pdf-export-vystup.png)
-
-*[VERZE] — Příklad výstupu exportu. Zachytit: exportovaný pohled s výztuží, viditelné barevné odlišení vrstev, popisky rozměrů stěny.*
-
-## Formáty exportu — kdy použít
-
-| Formát | Použití |
-|--------|---------|
-| **Export PDF** | Dokumentace, předání projektantovi, archivace |
-| **Export PNG** | Vložení do zpráv, prezentací, e-mailů |
-| **Tisk** | Rychlé vytisknutí pro kontrolu na staveništi |
-
-Podrobnosti o vrstvách a legendě viz [Validační okno](validace.md#vrstvy-a-legenda).
+1. Vygenerujte výztuž a otevřete validační okno.
+2. Pomocí **Obnovit** načtěte aktuální data z Tekla modelu.
+3. Zkontrolujte skupiny a zvolený režim zobrazení.
+4. Pro report více stěn zvolte **Export PDF** a vyberte požadované stěny.
+5. Pro rychlý obraz aktuální validace použijte PNG nebo tisk; výsledek před předáním ověřte.
 
 ## Viz také
 
-- [FAQ — Validace](../faq.md#validace)
+- [Validační okno](validace.md)

@@ -1,9 +1,12 @@
 # Reference
 
-Referenční část obsahuje kompletní přehled všech parametrů pluginu Wall Reinforcement Wizard s jejich výchozími hodnotami a platnými rozsahy.
+Referenční část popisuje parametry Wall Reinforcement Wizard doložené aktuálním uživatelským rozhraním a zdrojovým kódem. Není náhradou statického posouzení ani kontroly výsledku v Tekla modelu.
 
 ## Obsah reference
 
-- [Parametry](parametry.md) — Kompletní tabulka všech parametrů seskupená podle 8 sekcí pluginu (Výztuž, Krytí a okraje, Detaily, Nastavení)
+- [Parametry](parametry.md) — ověřené výchozí hodnoty a dostupné volby hlavního okna a Nastavení.
 
-Pro průvodce funkcemi pluginu viz [Průvodce](../pruvodce/index.md).
+Pro vysvětlení jednotlivých funkcí viz [Průvodce](../pruvodce/index.md).
+
+!!! warning "Kontrola v běžící aplikaci"
+    Dostupnost některých voleb závisí na načtené stěně, její geometrii a stavu modelu. Chování, které nelze potvrdit pouze ze zdrojového kódu, je v referenci označeno **K OVĚŘENÍ**.

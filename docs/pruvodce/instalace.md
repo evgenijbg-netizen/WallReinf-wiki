@@ -1,44 +1,29 @@
 # Instalace a spuštění
 
-!!! info "Verze pluginu: [VERZE]"
-    Tato stránka popisuje chování pluginu verze [VERZE].
+Tato stránka popisuje instalaci distribuovaného balíčku Wall Reinforcement Wizard a jeho spuštění pro práci s Tekla modelem.
 
-Tato stránka popisuje, jak nainstalovat plugin Wall Reinforcement Wizard do Tekla Structures a jak ho poprvé spustit.
+## Instalace aplikace
 
-## Instalace pluginu
+1. Zvolte instalační balíček určený pro svou verzi Tekla Structures.
+2. Spusťte instalační soubor a dokončete průvodce instalací.
+3. Instalátor uloží aplikaci do složky:
+   `%ProgramData%\Trimble\Tekla Structures\[TEKLA_VERSION].0\Environments\common\extensions\WallReinf`
 
-Plugin se instaluje zkopírováním souborů do složky aplikací Tekla Structures.
+V této složce jsou aplikace `WallReinf.exe` a její potřebné soubory. Instalátor může vytvořit také zástupce v nabídce Start a volitelně na ploše.
 
-1. Stáhněte archiv s pluginem (složka `WallReinforcementWizard`).
-2. Zkopírujte celou složku do adresáře aplikací Tekla Structures:
-   `C:\ProgramData\Trimble\Tekla Structures\[TEKLA_VERSION]\applications\`
-3. Výsledná cesta ke spustitelnému souboru:
-   `...\applications\WallReinforcementWizard\WallReinf.exe`
+!!! warning "Pozor"
+    Nepoužívejte postup ručního kopírování do složky `applications` ani spuštění přes panel **Applications & Components**. Aktuální distribuovaný instalátor používá složku Tekla extensions a vytváří samostatně spouštěnou aplikaci.
 
-!!! note "Poznámka"
-    Složka `applications` je sdílená pro všechny projekty v dané verzi Tekla. Plugin bude dostupný ve všech modelech.
+## Spuštění
 
-![Složka aplikací Tekla](../assets/screenshots/instalace-slozka.png)
+1. Otevřete Tekla Structures a načtěte model, se kterým budete pracovat.
+2. Spusťte **Wall Reinforcement Wizard** z nabídky Start, zástupce na ploše nebo souborem `WallReinf.exe` v instalační složce.
+3. V aplikaci ověřte připojení a načtěte stěny podle postupu [Připojení k modelu](pripojeni.md).
 
-*[VERZE] — Souborová struktura složky applications. Zachytit: složka WallReinforcementWizard viditelná v průzkumníku, obsah složky s WallReinf.exe.*
-
-## Spuštění pluginu
-
-Plugin se spouští přímo z Tekla Structures přes panel Applications & Components.
-
-1. Otevřete Tekla Structures a načtěte model.
-2. Otevřete panel **Applications & Components** (klávesa `F5` nebo menu **Applications → Applications & Components**).
-3. Do vyhledávacího pole zadejte `Wall Reinforcement`.
-4. Dvakrát klikněte na **Wall Reinforcement Wizard** v seznamu výsledků.
-5. Plugin se otevře jako samostatné okno.
-
-!!! note "Poznámka"
-    Tekla Structures musí být spuštěna s otevřeným modelem před spuštěním pluginu. Pokud model není načten, plugin se otevře, ale připojení k modelu bude nedostupné.
-
-![Applications & Components panel s pluginem](../assets/screenshots/instalace-spusteni.png)
-
-*[VERZE] — Tekla Structures Applications & Components panel. Zachytit: vyhledávací pole s textem "Wall Reinforcement", plugin viditelný v seznamu výsledků.*
+!!! note "K OVĚŘENÍ"
+    Dostupnost zástupce na ploše závisí na volbě provedené v instalačním průvodci.
 
 ## Viz také
 
-- [FAQ — Připojení k Tekla Structures](../faq.md#pripojeni-k-tekla-structures)
+- [Požadavky](pozadavky.md)
+- [Připojení k modelu](pripojeni.md)

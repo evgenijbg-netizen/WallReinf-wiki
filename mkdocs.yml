@@ -48,6 +48,7 @@ nav:
     - Připojení k modelu: pruvodce/pripojeni.md
     - Základní workflow: pruvodce/zakladni-workflow.md
     - Hlavní parametry: pruvodce/parametry.md
+    - Okrajové podmínky: pruvodce/okrajove-podminky.md
     - Otvory: pruvodce/otvory.md
     - Třmínky: pruvodce/trminky.md
     - Diagonální pruty: pruvodce/diagonaly.md
@@ -58,3 +59,4 @@ nav:
     - reference/index.md
     - Parametry: reference/parametry.md
   - FAQ: faq.md
+  - Audit dokumentace: audit.md
