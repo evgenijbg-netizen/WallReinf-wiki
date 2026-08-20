@@ -45,8 +45,14 @@ nav:
     - pruvodce/index.md
     - Požadavky: pruvodce/pozadavky.md
     - Instalace: pruvodce/instalace.md
+    - Licence a aktivace: pruvodce/licence-a-aktivace.md
+    - První spuštění a nápověda: pruvodce/prvni-spusteni-a-napoveda.md
     - Připojení k modelu: pruvodce/pripojeni.md
+    - Geometrie a typy stěn: pruvodce/geometrie-a-typy-sten.md
     - Základní workflow: pruvodce/zakladni-workflow.md
+    - Re-edit: pruvodce/re-edit.md
+    - Převzetí zkopírované výztuže: pruvodce/prevzeti-zkopirovane-vyztuze.md
+    - Optimalizace délek: pruvodce/optimalizace-delek.md
     - Hlavní parametry: pruvodce/parametry.md
     - Okrajové podmínky: pruvodce/okrajove-podminky.md
     - Otvory: pruvodce/otvory.md

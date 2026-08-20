@@ -31,6 +31,23 @@ Podrobný význam voleb, parametry tloušťky a bezpečný postup popisují [Okr
 
 Okno **Nastavení** uchovává výchozí hodnoty používané při práci s novou stěnou. Patří sem mimo jiné prahy třmínků a praporů, fiktivní zvětšení otvorů a parametry závlačí.
 
+### Rastry, navazující stěny a šikmé hrany
+
+V **Nastavení** jsou také volby pro segmentaci rastru a dělení prutů. Volba **Generovat bez překryvu** ovlivňuje rozdělení rastru; její vhodnost proto ověřte na Preview a před zápisem v Tekla modelu.
+
+Pro automatické rozpoznání boční návaznosti se ukládá tolerance navazující kolmé stěny. Změna tolerance může změnit, které okolní prvky aplikace vyhodnotí jako návaznost; není to náhrada ruční kontroly okrajových podmínek.
+
+Pro podporovaný případ šikmé horní hrany určuje nastavení počet přímých prutů v jedné délkové skupině. Pruty v takové skupině se řídí nejdelší teoretickou délkou skupiny, aby bylo možné jejich případné zkrácení na stavbě. Rozsah podporovaných tvarů a vhodnou hodnotu pro konkrétní projekt ověřte v Preview a v Tekla modelu — jsou **K OVĚŘENÍ**.
+
+### Třídy a číslování výztuže
+
+Nastavení obsahuje vzor pro prefix číslování generované výztuže. Používá se při zápisu nových prutů do Tekla; konkrétní výsledné označení ověřte podle konvence projektu.
+
+Přiřazení Tekla **Class** lze upravit souborem `rebar-classes.txt` v uživatelské složce WallReinf (`%AppData%/WallReinf`). Soubor se založí s šablonou při prvním použití. Úprava mění pouze třídy generované výztuže, nikoli její geometrii nebo názvy skupin.
+
+!!! warning "Změny tříd"
+    Neplatná nebo nedostupná konfigurace nesmí zastavit generování; aplikace použije výchozí přiřazení. Po úpravě souboru vždy vygenerujte a ověřte reprezentativní stěnu v Tekla modelu.
+
 ### Fiktivní zvětšení otvorů
 
 Vodorovné a svislé zvětšení otvoru mají rozsah 0–200 mm. Používají se při segmentaci přímé výztuže; kotevní tvary třmínků a praporů se nadále vážou na skutečnou hranu otvoru.

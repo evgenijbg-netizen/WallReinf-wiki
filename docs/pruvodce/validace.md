@@ -21,12 +21,15 @@ Legenda pracuje se skupinami **Svislá**, **Vodorovná**, **Hrany a vazby**, **O
 
 - zda jsou ve zobrazených skupinách očekávané pruty;
 - zda výztuž respektuje hranice stěny a otvory;
+- u stěn s fyzickým obrysem (například složená nebo šikmo seříznutá stěna), zda zobrazený obrys a pruty odpovídají skutečné geometrii;
 - zda se neočekávaně nezobrazují přesahy nebo prázdné oblasti;
 - zda souhlasí výsledek v modelu s návrhem, který byl před generováním zkontrolován v Preview.
 
 ## Export
 
 Z validačního okna lze spustit export PDF, PNG a tisk. Rozdíly mezi nimi popisuje [PDF export](pdf-export.md).
+
+Validační data pro export zahrnují fyzický obrys stěny, je-li pro stěnu dostupný. Přesto před předáním reportu ověřte výsledek na modelu; nepodporovaný nebo nejednoznačně načtený tvar je **K OVĚŘENÍ**.
 
 ## Viz také
 

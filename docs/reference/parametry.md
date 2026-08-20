@@ -47,6 +47,10 @@ Následující skupiny jsou dostupné v dialogu **Nastavení**:
 - třmínky a prapory,
 - zpracování prostupů,
 - normové nastavení polohy výztuže,
+- prefix číslování generované výztuže,
+- tolerance rozpoznání navazující kolmé stěny,
+- počet prutů ve skupině délek pro podporovanou šikmou horní hranu,
+- konfigurace Tekla **Class** pro generovanou výztuž v souboru `rebar-classes.txt`,
 - stav licence.
 
 Konkrétní rozsahy, výchozí hodnoty a vzájemné závislosti těchto voleb je potřeba pro tuto verzi zkontrolovat v běžící aplikaci; proto jsou **K OVĚŘENÍ**. Neuvádějte je do projektu jako návrhové pravidlo bez kontroly výsledku.

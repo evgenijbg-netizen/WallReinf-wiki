@@ -29,6 +29,10 @@ Po vygenerování můžete v kontextové nabídce **Stěna** nastavit stav:
 
 Stavové filtry v horní liště umožňují zobrazit nebo skrýt hotové stěny, stěny ke kontrole a stěny bez výztuže.
 
+### Opakovaná práce se stěnou
+
+Pro úpravu dříve vygenerované stěny použijte [Re-edit — bezpečná opakovaná úprava](re-edit.md). Pokud pracujete s kopií stěny a aplikace nabídne převzetí její výztuže, nejdříve postupujte podle návodu [Převzetí zkopírované výztuže](prevzeti-zkopirovane-vyztuze.md). Délky již existujících přímých prutů lze projít v [Optimalizaci délek výztuže](optimalizace-delek.md); po každé změně ověřte skutečný výsledek v modelu.
+
 ## 4. Přidejte poznámku podle potřeby
 
 Kliknutím na ikonu **Poznámka ke stěně** otevřete dialog pro textovou poznámku. Poznámka se ukládá do vlastnosti `Comment` vybrané stěny v Tekla modelu, takže je vázaná na tento modelový prvek.
@@ -38,4 +42,6 @@ Kliknutím na ikonu **Poznámka ke stěně** otevřete dialog pro textovou pozn�
 - [Referenční parametry hlavního okna](../reference/parametry.md#hlavni-okno)
 - [Okrajové podmínky](okrajove-podminky.md)
 - [Nastavení](../reference/parametry.md#nastaveni)
-- [FAQ — Generování a opakovaná úprava](../faq.md#generovani-a-opakovana-uprava)
+- [Re-edit — bezpečná opakovaná úprava](re-edit.md)
+- [Optimalizace délek výztuže](optimalizace-delek.md)
+- [Převzetí zkopírované výztuže](prevzeti-zkopirovane-vyztuze.md)

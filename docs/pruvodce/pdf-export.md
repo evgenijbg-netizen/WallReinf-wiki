@@ -6,6 +6,8 @@ Exporty jsou dostupné z [Validačního okna](validace.md): **Export PDF**, **Ex
 
 Export PDF vytváří validační report pro vybrané stěny. Při exportu se nejprve vyberou stěny a potom soubor PDF; aplikace do něj sestaví data a geometrii validačních vrstev. Nabídka exportu obsahuje také **Hromadný export**.
 
+Je-li pro stěnu dostupný fyzický obrys, PDF report jej používá při vykreslení geometrie. To je důležité například pro složené stěny, fyzické výřezy na konci nebo podporované šikmé horní hrany.
+
 !!! important "PDF není snímek obrazovky"
     PDF report není prosté uložení aktuálně viditelného plátna. Neuvádějte proto, že automaticky zachová aktuální přepínače vrstev nebo průhlednost, dokud to neověříte v běžící aplikaci.
 

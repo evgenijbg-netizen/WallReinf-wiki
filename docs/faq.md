@@ -33,15 +33,23 @@ Viz [Základní workflow](pruvodce/zakladni-workflow.md).
 
 ### Kdy použít Re-edit?
 
-Tlačítko **Re-edit** je určeno pro bezpečnou opakovanou úpravu stěny s uloženým stavem WallReinf. Může být zablokováno například po změně topologie, při nejednoznačné identitě prutů nebo po ruční úpravě sledovaných objektů.
+Tlačítko **Re-edit** je určeno pro stěnu s bezpečně načteným uloženým stavem WallReinf. Může být zablokováno například po změně topologie, při nejednoznačné identitě prutů nebo po ruční úpravě sledovaných objektů. Pokud se po zápisu zobrazí částečné selhání, použijte ihned Tekla Undo nebo stěnu znovu vygenerujte před dalším Re-editem.
+
+Viz [Re-edit — bezpečná opakovaná úprava](pruvodce/re-edit.md).
 
 ### Co znamená převzetí zkopírované výztuže?
 
-Při práci s kopií stěny může aplikace nabídnout kontrolované převzetí zkopírované výztuže. Dialog rozlišuje objekty k převzetí, ponechání, odstranění identických kopií a konflikty. Výsledek vždy zkontrolujte ve vybraném Tekla modelu.
+Při práci s kopií stěny může aplikace nabídnout kontrolované převzetí zkopírované výztuže. Kliknutím na počty kategorií si nejprve označte přesné objekty v Tekla modelu. Konflikty nebo neúplná identita převzetí zablokují; po převzetí může Re-edit převzaté pruty změnit nebo odstranit.
+
+Viz [Převzetí zkopírované výztuže](pruvodce/prevzeti-zkopirovane-vyztuze.md).
 
 ### Optimalizace délek nenachází žádné pruty
 
 Optimalizace pracuje se skutečnými přímými pruty WallReinf v modelu; samotný náhled není vstupem pro optimalizační změnu. Nejprve proto výztuž vygenerujte a ověřte, že je model připojen.
+
+V dialogu zkontrolujte aktivní filtry a výsledky skenu. Volba **Zahrnout cizí pruty** je výslovný, pouze dočasný souhlas se zahrnutím cizí výztuže, která projde filtry.
+
+Viz [Optimalizace délek výztuže](pruvodce/optimalizace-delek.md).
 
 ## Otvory, lemování a diagonály
 

@@ -23,6 +23,15 @@ Poté zadejte hodnotu do vstupního pole a klikněte na **Načíst**. Nalezené 
 !!! note "K OVĚŘENÍ"
     Chování prázdné hodnoty v režimu **Prefix** není v uživatelském rozhraní výslovně popsáno. Pro předvídatelný výsledek vždy zadejte prefix nebo úplný identifikátor.
 
+### Cast unit a složená stěna
+
+Je-li stěna tvořena více díly jednoho cast unitu, aplikace může sestavit společnou logickou stěnu. V dialogu načítání lze pro tento případ zvolit díl cast unitu, který bude použit jako základ výběru. Po změně výběru obnovte načtení a zkontrolujte obrys v náhledu.
+
+!!! warning "Nevybírejte jen podle názvu"
+    Složené díly mohou mít schod, výřez nebo jinou výšku. Před generováním ověřte fyzický obrys, polohu otvorů a orientaci S1/S2. Pokud aplikace hlásí neslučitelné díly, mezeru nebo nepodporovaný obrys, generování zastavte.
+
+Podrobnosti ke složeným, polygonálním, šikmým a vertikálním stěnám uvádí [Geometrie a typy stěn](geometrie-a-typy-sten.md).
+
 ### Filtr materiálu
 
 V **Nastavení → Načítání stěn** lze vyplnit **Filtr materiálu (prefix)**. Načtou se jen prvky, jejichž materiál tímto prefixem začíná; například `C` pro beton. Prázdná hodnota filtr nepoužije.
@@ -45,3 +54,4 @@ Pokračujte na [Základní workflow](zakladni-workflow.md) pro kompletní postup
 
 - [Požadavky](pozadavky.md)
 - [Instalace a spuštění](instalace.md)
+- [Geometrie a typy stěn](geometrie-a-typy-sten.md)
